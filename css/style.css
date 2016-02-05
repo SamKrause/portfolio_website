@@ -4,12 +4,15 @@ body {
 }
 
 /* Index Page */
+
+  /* Side Bar */
 .side-bar {
   float:left;
-  display: fixed;
+  position: fixed;
   height: 1000px;
   width: 250px;
-  border: black solid 2px
+ /* border: black solid 2px;*/
+  background-color: #cccccc;
 }
 
 nav {
@@ -56,11 +59,26 @@ nav a:visited {
 
 }
 
-
+  /*Main Container*/
 .main-container {
-
+  /*border: black solid 2px;*/
+  width: 100%;
+  height: 1000px;
+  background-color: #ccbbbb;
+  margin-left: 250px
 }
 
-footer {
+.clear-fix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
 
+  /* Footer */
+footer {
+  /*border: black solid 2px;*/
+  width: 100%;
+  height: 200px;
+  margin-left: 250px;
+  background-color: #bbbbbb
 }
