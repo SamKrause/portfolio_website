@@ -2,7 +2,5 @@
 
 
 
-by SamKrause,
-Steve Snow,
-& Austin Sharp
+by SamKrause
 
