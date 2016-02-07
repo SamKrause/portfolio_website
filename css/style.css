@@ -10,8 +10,7 @@ body {
   float:left;
   position: fixed;
   height: 1000px;
-  width: 250px;
- /* border: black solid 2px;*/
+  width: 225px;
   background-color: #cccccc;
 }
 
@@ -43,7 +42,11 @@ nav a:hover {
   background-color: black;
 }
 
-nav a:visited {
+nav a:active {
+  background-color: black;
+}
+
+#current-link {
   background-color: black;
 }
 
@@ -61,11 +64,10 @@ nav a:visited {
 
   /*Main Container*/
 .main-container {
-  /*border: black solid 2px;*/
-  width: 100%;
+  width: auto;
   height: 1000px;
   background-color: #ccbbbb;
-  margin-left: 250px
+  margin-left: 225px
 }
 
 .clear-fix:after {
@@ -74,10 +76,16 @@ nav a:visited {
   clear: both;
 }
 
-.main-columns {
+
+#image-3 {
+    height: 250px;
+    width: 350px;
+}
+#mainwrapper {
+  font: 10pt normal Arial, sans-serif;
+  text-align: center;
   width: 33%;
   height: 1000px;
-  border: 1px solid black;
   float: left;
   display: flex;
   flex-direction: column;
@@ -85,17 +93,59 @@ nav a:visited {
   justify-content: space-between;
 }
 
-.main-item {
-  width: 200px;
-  height: 250px;
-  border: dashed 1px black;
+#mainwrapper .box {
+    border: 5px solid #fff;
+    cursor: pointer;
+    height: 250px;
+    float: left;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+#mainwrapper .box img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+#mainwrapper .box .caption {
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 0;
+}
+
+#mainwrapper .box .fade-caption, #mainwrapper .box .scale-caption {
+    opacity: 0;
+    width: 350px;
+    height: 250px;
+    text-align: left;
+    padding: 15px;
+}
+
+#mainwrapper .box:hover .fade-caption {
+    opacity: 1;
 }
 
   /* Footer */
 footer {
-  /*border: black solid 2px;*/
-  width: 100%;
-  height: 200px;
-  margin-left: 250px;
+  width: auto;
+  height: 150px;
+  margin-left: 225px;
   background-color: #bbbbbb
 }
