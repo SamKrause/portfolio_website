@@ -198,12 +198,45 @@ footer {
   text-decoration: none;
 }
 
+form {
+  width: 100%;
+}
+
+.name-box {
+  padding-top: 25px;
+  border-top: 2px solid #2d3c49;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 60%;
+}
+
+.message-box-label {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.message-box-text {
+  text-align: center;
+  height: 600px;
+  width: 100%;
+}
+
+.message-box-text textarea {
+  height: 300px;
+  width: 600px;
+}
+
 /* About Page*/
 .about img {
   width: 300px;
   height: 220px;
   float: left;
   margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
 }
 
 .about p {
@@ -211,5 +244,6 @@ footer {
   color: #2d3c49;
   text-indent: 50px;
   padding: 0 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
-
