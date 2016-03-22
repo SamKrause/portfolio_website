@@ -9,45 +9,47 @@ body {
 .side-bar {
   float:left;
   position: fixed;
-  height: 1000px;
-  width: 225px;
+  height: 30px;
+  width: 100%;
   background-color: #2d3c49;
+  z-index: 10;
 }
 
 nav {
   position: relative;
-  top: 20px;
+  top: 0;
   left: 10px;
   display: -webkit-flex;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  z-index: 10;
+  height: 30px;
 }
 
 nav a {
-  margin-bottom: 5px;
-  background-color: #96c3b2;
+  background-color: #2d3c49;
   width: 70px;
   text-indent: 5px;
   color:white;
   text-decoration: none;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  z-index: 10;
+  height: 25px;
+  padding-top: 5px;
 }
 
 nav a a:link {
-  color: white
+  color: white;
+  z-index: 10;
 }
 
 nav a:hover {
   background-color: #bea54d;
+  z-index: 10;
 }
 
 nav a:active {
   background-color: #bea54d;
-}
-
-#current-link {
-  background-color: #bea54d;
+  z-index: 10;
 }
 
 .side-bar p {
@@ -58,17 +60,14 @@ nav a:active {
 }
 
 #name {
-  font-size: 35px;
-  text-decoration: underline;
-  margin-top: 200px;
+  text-decoration: none;
 }
 
   /*Main Container*/
 .main-container {
   width: auto;
-  height: 1000px;
+  height: 1250px;
   background-color: #f2e6d9;
-  margin-left: 225px
 }
 
 .clear-fix:after {
@@ -108,6 +107,7 @@ nav a:active {
     box-shadow: 1px 1px 1px 1px #ccc;
     background-image: url("../images/vesper_logo.jpg");
     background-size: cover;
+    z-index: 1;
 }
 
 #mainwrapper .box img {
@@ -118,10 +118,12 @@ nav a:active {
     -o-transition: all 300ms ease-out;
     -ms-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
+    z-index: 1;
 }
 
 #mainwrapper #vesper_photo {
   border: 5px solid #bea54d;
+  z-index: 1;
 }
 
 #mainwrapper .box .caption {
@@ -135,6 +137,7 @@ nav a:active {
     -ms-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
     left: 0;
+    z-index: 1;
 }
 
 #mainwrapper .box .fade-caption {
@@ -143,24 +146,25 @@ nav a:active {
     height: 100%;
     text-align: left;
     padding: 15px;
+    z-index: 1;
 }
 
 #mainwrapper .box:hover .fade-caption {
     opacity: 1;
+    z-index: 1;
 }
 
   /* Footer */
 footer {
   width: auto;
-  height: 150px;
-  margin-left: 225px;
+  height: 75px;
   background-color: #bea54d;
 }
 
 #nav-footer {
   display: inline-block;
   position: relative;
-  top: 25px;
+  top: 15px;
   margin-left: 25px;
   display: -webkit-flex;
   display: flex;
@@ -169,7 +173,7 @@ footer {
 
 #nav-footer a {
   color: white;
-  font-size: 5em;
+  font-size: 3em;
   margin: auto 25px;
 }
 
@@ -191,6 +195,11 @@ footer {
   background-color: #bea54d;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
+}
+
+.header p span {
+  font-size: 24px;
 }
 
 .contact-main p{
